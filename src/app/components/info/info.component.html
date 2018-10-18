@@ -1,0 +1,83 @@
+<div class="row-md-6">
+    <h3>Enter Id Number:</h3>
+    ID: <input type="text" [(ngModel)]="id">
+    <button type="button" (click)="get()" class="btn btn-primary">Get</button>
+    <h3>Click to post the data</h3>
+    <button type="button" (click)="post()" class="btn btn-alert">Post</button>
+</div>
+
+<br>
+
+<div class="row-md-6">
+
+    <ul class="list-group">
+        <li  class="list-group-item">
+            <table *ngIf="results.id" class="table table-bordered table-hover table-responsive table-condensed table-striped" >
+                
+                    <tr  class="info">
+                        <th> ID</th>
+                        <th> Name</th>
+                        <th> Username</th>
+                        <th> Email</th>
+                        <th> Address(Street)</th>
+                        <th> Company(Name)</th>
+                    </tr>
+
+                    <tr  class="success" >
+                         <td class="danger">{{results?.id}}</td>
+                         <td>{{results?.name}}</td>
+                         <td class="danger">{{results?.username}}</td>
+                         <td>{{results?.email}}</td>
+                         <td class="danger">{{results?.address?.street}}</td>
+                         <td>{{results?.company?.name}}</td>
+                    </tr>
+
+            </table>
+
+<!--{{results.id}}    
+    {{results.name}}
+    {{results.username}}
+    {{results.email}}
+    {{results.address.street}}
+    {{results.company.name}} -->
+
+        </li>
+    </ul>
+</div>
+<!-- <table [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5" [mfSaveRowsOnPage]="true" (mfSelectedEntities)="setSelectedEntities($event)">
+    <thead>
+        <tr>
+            <th>
+                <mfRowSelectorHead></mfRowSelectorHead>
+            </th>
+            <th style="width: 20%">
+                <mfDefaultSorter by="id" [mfShowSortableArrows]="true">ID</mfDefaultSorter>
+            </th>
+            <th style="width: 50%">
+                <mfDefaultSorter by="name">Name</mfDefaultSorter>
+            </th>
+            <th style="width: 10%">
+                <mfDefaultSorter by="username">UserName</mfDefaultSorter>
+            </th>
+            <th style="width: 20%">
+                <mfDefaultSorter by="email">Email</mfDefaultSorter>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let result of results; let ndx = index">
+            <td><mfRowSelector [entity]="item" [checkboxId]="ndx"></mfRowSelector></td>
+            <td>{{result.id}}</td>
+            <td>{{result.name}}</td>
+            <td>{{result.username}}</td>
+            <td>{{result.email}}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">
+                <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+            </td>
+        </tr>
+    </tfoot>
+</table> -->

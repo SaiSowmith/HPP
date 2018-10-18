@@ -1,0 +1,244 @@
+<div class="row-md-6">
+  <h3>Click to get data:</h3>
+  <button type="button" (click)="get()" class="btn btn-primary">Get</button>
+  <h3>Click to post the data</h3>
+  <button type="button" (click)="post()" class="btn btn-alert">Post</button>
+</div>
+
+<hr>
+<div class="row-md-6">
+
+  <div class="card col-md-4 ">
+    <div class="well bs-component wrapper">
+
+      <form ngNativeValidate (ngSubmit)="save(f.value)">
+        <h3 align="center">Price Prediction... </h3>
+
+        <div class="form-group">
+          <label for="LotArea">LotArea</label>
+          <input class="form-control" type="text" id="LotArea" name="LotArea" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="GrLivArea">GrLivArea</label>
+          <input class="form-control" type="text" id="GrLivArea" name="GrLivArea" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="BsmtFinSF1">BsmtFinSF1</label>
+          <input class="form-control" type="text" id="BsmtFinSF1" name="BsmtFinSF1" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="GarageArea">GarageArea</label>
+          <input class="form-control" type="text" id="GarageArea" name="GarageArea" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="YearBuilt">YearBuilt</label>
+          <input class="form-control" type="text" id="YearBuilt" name="YearBuilt" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="TotalBsmtSF">TotalBsmtSF</label>
+          <input class="form-control" type="text" id="TotalBsmtSF" name="TotalBsmtSF" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="YrSold">YrSold</label>
+          <input class="form-control" type="text" id="YrSold" name="YrSold" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="FirstFlrSF">FirstFlrSF</label>
+          <input class="form-control" type="text" id="FirstFlrSF" name="FirstFlrSF" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="WoodDeckSF">WoodDeckSF</label>
+          <input class="form-control" type="text" id="WoodDeckSF" name="WoodDeckSF" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="OpenPorchSF">OpenPorchSF</label>
+          <input class="form-control" type="text" id="OpenPorchSF" name="OpenPorchSF" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="SecondFlrSF">SecondFlrSF</label>
+          <input class="form-control" type="text" id="SecondFlrSF" name="SecondFlrSF" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="MasVnrArea">MasVnrArea</label>
+          <input class="form-control" type="text" id="MasVnrArea" name="MasVnrArea" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="BedroomAbvGr">BedroomAbvGr</label>
+          <input class="form-control" type="text" id="BedroomAbvGr" name="BedroomAbvGr" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="Fireplaces">Fireplaces</label>
+          <input class="form-control" type="text" id="Fireplaces" name="Fireplaces" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="FullBath">FullBath</label>
+          <input class="form-control" type="text" id="FullBath" name="FullBath" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="HeatingQC_Gd">HeatingQC_Gd</label>
+          <input class="form-control" type="text" id="HeatingQC_Gd" name="HeatingQC_Gd" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="SaleCondition_Normal">SaleCondition_Normal</label>
+          <input class="form-control" type="text" id="SaleCondition_Normal" name="SaleCondition_Normal" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="Exterior1st_VinylSd">Exterior1st_VinylSd</label>
+          <input class="form-control" type="text" id="Exterior1st_VinylSd" name="Exterior1st_VinylSd" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="EnclosedPorch">EnclosedPorch</label>
+          <input class="form-control" type="text" id="EnclosedPorch" name="EnclosedPorch" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="HeatingQC_TA">HeatingQC_TA</label>
+          <input class="form-control" type="text" id="HeatingQC_TA" name="HeatingQC_TA" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="MasVnrType_BrkFace">MasVnrType_BrkFace</label>
+          <input class="form-control" type="text" id="MasVnrType_BrkFace" name="MasVnrType_BrkFace" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="MasVnrType_None">MasVnrType_None</label>
+          <input class="form-control" type="text" id="MasVnrType_None" name="MasVnrType_None" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="BsmtFinSF2">BsmtFinSF2</label>
+          <input class="form-control" type="text" id="BsmtFinSF2" name="BsmtFinSF2" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="RoofStyle_Hip">RoofStyle_Hip</label>
+          <input class="form-control" type="text" id="RoofStyle_Hip" name="RoofStyle_Hip" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="RoofStyle_Gable">RoofStyle_Gable</label>
+          <input class="form-control" type="text" id="RoofStyle_Gable" name="RoofStyle_Gable" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="Exterior1st_MetalSd">Exterior1st_MetalSd</label>
+          <input class="form-control" type="text" id="Exterior1st_MetalSd" name="Exterior1st_MetalSd" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="Exterior1st_HdBoard">Exterior1st_HdBoard</label>
+          <input class="form-control" type="text" id="Exterior1st_HdBoard" name="Exterior1st_HdBoard" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="Condition1_Norm">Condition1_Norm</label>
+          <input class="form-control" type="text" id="Condition1_Norm" name="Condition1_Norm" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="HouseStyle_1Story">HouseStyle_1Story</label>
+          <input class="form-control" type="text" id="HouseStyle_1Story" name="HouseStyle_1Story" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="KitchenQual_Gd">KitchenQual_Gd</label>
+          <input class="form-control" type="text" id="KitchenQual_Gd" name="KitchenQual_Gd" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="Foundation_CBlock">Foundation_CBlock</label>
+          <input class="form-control" type="text" id="Foundation_CBlock" name="Foundation_CBlock" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="KitchenQual_TA">KitchenQual_TA</label>
+          <input class="form-control" type="text" id="KitchenQual_TA" name="KitchenQual_TA" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="OverallQual_6">OverallQual_6</label>
+          <input class="form-control" type="text" id="OverallQual_6" name="OverallQual_6" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="ScreenPorch">ScreenPorch</label>
+          <input class="form-control" type="text" id="ScreenPorch" name="ScreenPorch" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="MSZoning_RL">MSZoning_RL</label>
+          <input class="form-control" type="text" id="MSZoning_RL" name="MSZoning_RL" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="Foundation_PConc">Foundation_PConc</label>
+          <input class="form-control" type="text" id="Foundation_PConc" name="Foundation_PConc" placeholder="" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="OverallQual_7">OverallQual_7</label>
+          <input class="form-control" type="text" id="OverallQual_7" name="OverallQual_7" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="Exterior1st_Wd_Sdng">Exterior1st_Wd_Sdng</label>
+          <input class="form-control" type="text" id="Exterior1st_Wd_Sdng" name="Exterior1st_Wd_Sdng" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+          <label for="OverallQual_5">OverallQual_5</label>
+          <input class="form-control" type="text" id="OverallQual_5" name="OverallQual_5" placeholder="" required>
+        </div>
+        
+        <div class="form-group">
+          <button (click)="post()" type="buton" class="btn btn-primary " style="margin-bottom: 0px">
+            Predict
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>

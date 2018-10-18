@@ -1,0 +1,51 @@
+<div class="row-md-6">
+
+<div class="card col-md-4 ">
+  <div class="well bs-component wrapper">
+
+    <form #f ngNativeValidate (ngSubmit)="post(f.value)">
+      <h3 align="center">Tweet... </h3>
+
+      <div class="form-group">
+        <label for="Tweet">Tweet</label>
+        <input class="form-control" [(ngModel)]="Tweet" type="text"  id="Tweet" name="Tweet" placeholder="Tweet your message"  required>
+      </div>
+
+      <div class="form-group">
+        <button (click)="post()" type="buton" class="btn btn-primary " style="margin-bottom: 0px">
+          Predict
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+</div>
+
+<!-- <div class="container-fluid ">
+    <div class="row content">
+<form action="">
+<fieldset>
+<div class="form-group">
+    <label class="col-md-4 control-label" for="tweet">Tweet</label>
+    <div class="col-md-4">
+      <input id="tweet" name="tweet" type="text"
+        placeholder="Enter your Tweet " class="form-control input-md" required>
+      <div class="alert alert-danger" *ngIf="tweet.touched && tweet.invalid">
+        <div *ngIf="tweet.errors.required"> *Tweet is required</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+      <label class="col-md-4 control-label" for="submit"></label>
+      <div class="col-md-4">
+        <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+  </form>
+  </div>
+  </div> -->
